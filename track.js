@@ -30,11 +30,12 @@ const handleOnMove = e => {
   }
 };
 
-/* -- Had to add extra lines for touch events -- */
-
+/* -- Event listeners for both mouse and touch events -- */
 window.onmousedown = e => handleOnDown(e);
 window.ontouchstart = e => handleOnDown(e.touches[0]);
+
 window.onmouseup = e => handleOnUp(e);
 window.ontouchend = e => handleOnUp(e.touches[0]);
+
 window.onmousemove = e => handleOnMove(e);
 window.ontouchmove = e => handleOnMove(e.touches[0]);
