@@ -367,36 +367,63 @@ h1, h2, h3, h4, h5, h6 {
   background-color: white;
   margin-bottom: -5px;
   overflow: hidden;
+  position: relative;
   border: 1px solid #bfb398;
   display: inline-block;
+  margin-bottom: -3vh;
+  
 }
 
 .wrapper h1 {
     color: #9D000D;
 }
 
+.imageContainer {
+    position: relative;
+}
+
+.imageContainer h2 {
+    margin: 0;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 50vw;
+}
+
 #image-track {
   display: flex;
   gap: 4vmin;
-  position: relative;
-  top: 32%;
-  left: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
   transform: translate(0%, -50%); 
   user-select: none; /* -- Prevent image highlighting -- */
 }
 
 
-#image-track > .image {
+#image-track .image {
   border-radius: 5px;
-  width: 40vmin;
-  height: 56vmin;
+  width: 50vw;
+  height: 29vh;
   object-fit: cover;
   object-position: 100% center;
 }
 
 
 @media (max-width: 490px) {
-    #butterPecan {
-        margin-left: 12.5vw;
-    }
+#butterPecan {
+    margin-left: 12.5vw;
+}
+
+.wrapper {
+    height: 46vh;
+}
+}
+
+
+@media (max-width: 400px) {
+.wrapper {
+    height: 57vh;
+}
 }
