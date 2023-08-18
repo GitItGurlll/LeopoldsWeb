@@ -241,7 +241,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sliderWrapper h1 {
-    font-size: 13vw;
+    font-size: 12vw;
     margin: 15px 0 10px 0;
     color: black;
 }
@@ -418,7 +418,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .wrapper {
-  height: 44vh;
+  height: 44vw;
   width: 99.5%;
   background: radial-gradient(rgb(230, 230, 180), rgb(235, 235, 141));
   margin-bottom: -5px;
@@ -468,6 +468,12 @@ h1, h2, h3, h4, h5, h6 {
   object-position: 100% center;
 }
 
+@media (min-width: 385px) {
+
+    .slider {
+        left: 1.5%;
+    }
+}
 
 @media (min-width: 401px) {
 
@@ -479,7 +485,6 @@ h1, h2, h3, h4, h5, h6 {
     height: 48vh;
 }
 }
-
 
 @media (max-width: 400px) {
 .wrapper {
