@@ -19,7 +19,7 @@
 
 @font-face {
     font-family: 'Anko-Bold-Italic';
-    src: url('Fonts/Anko-Bold-Italic.otf') format('truetype');
+    src: url('Fonts/Anko-BoldItalic.otf') format('truetype');
 }
 
 @font-face {
@@ -281,9 +281,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .about p {
     text-align: center;
-    margin: 0 10px 0 10px;
+    margin: 0 15px 0 15px;
     padding-bottom: 10px;
-    font-size: 18px;
+    font-size: 19px;
+    font-weight: bold;
 }
 
 .about button {
