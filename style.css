@@ -418,7 +418,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .wrapper {
-  height: 44vw;
+  height: 106vmin;
   width: 99.5%;
   background: radial-gradient(rgb(230, 230, 180), rgb(235, 235, 141));
   margin-bottom: -5px;
@@ -481,13 +481,4 @@ h1, h2, h3, h4, h5, h6 {
     left: 2.55%;
 }
 
-.wrapper {
-    height: 48vh;
-}
-}
-
-@media (max-width: 400px) {
-.wrapper {
-    height: 59vh;
-}
 }
