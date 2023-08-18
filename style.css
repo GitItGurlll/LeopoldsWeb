@@ -13,8 +13,8 @@
 } 
 
 @font-face {
-    font-family: 'Slippery';
-    src: url('Fonts/Rossanova-Bold.otf') format('truetype');
+    font-family: 'Hornbill';
+    src: url('Fonts/Hornbill-Bold.ttf') format('truetype');
 }
 
 @font-face {
@@ -24,7 +24,7 @@
 
 @font-face {
     font-family: 'Anko-Bold';
-    src: url('Fonts/Anko-Bold.otf') format('truetype');
+    src: url('Fonts/Hornbill.ttf') format('truetype');
 }
 
 @font-face {
@@ -211,12 +211,13 @@ button {
     align-items: center;
 }
 
-.about h1 {
+.about h1, .socials h1 {
     font-family: 'Anko-Bold-Italic';
+    font-weight: 300;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Slippery';
+    font-family: 'Hornbill';
     text-align: center;
 }
 
@@ -246,7 +247,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sliderWrapper h1 {
-    font-size: 12vw;
+    font-size: 10vmin;
     margin: 15px 0 10px 0;
     color: black;
 }
@@ -311,7 +312,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: translate(-50%, -50%);
     color: white;
     margin: 0;
-    width: 300px;
+    width: max-content;
     font-size: 45px;
     border-radius: 8px;
     padding: 4px;
@@ -330,7 +331,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .signUp h1, .girlScouts h1 {
-    font-family: 'Anko-Bold';
+    font-family: 'Hornbill';
 }
 
 #emailSubmit {
@@ -399,7 +400,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .socials h1 {
     margin-bottom: 15px;
-    font-family: 'Anko-Bold-Italic';
 }
 
 #social-wrapper {
