@@ -14,7 +14,7 @@
 
 @font-face {
     font-family: 'Hornbill';
-    src: url('Fonts/Hornbill-Bold.ttf') format('truetype');
+    src: url('Fonts/cooperm.ttf') format('truetype');
 }
 
 @font-face {
@@ -115,9 +115,49 @@ button {
 }
 
 .barber-pole #order {
-    background: linear-gradient(45deg, #b8ac8c 10%, #b8ac8c  10%, #b8ac8c  20%, white 20%, white 30%, #b8ac8c  30%, #b8ac8c  40%, white 40%, white 50%, #b8ac8c  50%, #b8ac8c  60%, white 60%, white 70%, #b8ac8c  70%, #b8ac8c  80%, white 80%, white 90%, #b8ac8c  90%);
+    background: linear-gradient(
+  45deg,
+  rgb(235, 235, 141) 5%,
+  rgb(235, 235, 141) 10%,
+  white 10%,
+  white 15%,
+  rgb(235, 235, 141) 15%,
+  rgb(235, 235, 141) 20%,
+  white 20%,
+  white 25%,
+  rgb(235, 235, 141) 25%,
+  rgb(235, 235, 141) 30%,
+  white 30%,
+  white 35%,
+  rgb(235, 235, 141) 35%,
+  rgb(235, 235, 141) 40%,
+  white 40%,
+  white 45%,
+  rgb(235, 235, 141) 45%,
+  rgb(235, 235, 141) 50%,
+  white 50%,
+  white 55%,
+  rgb(235, 235, 141) 55%,
+  rgb(235, 235, 141) 60%,
+  white 60%,
+  white 65%,
+  rgb(235, 235, 141) 65%,
+  rgb(235, 235, 141) 70%,
+  white 70%,
+  white 75%,
+  rgb(235, 235, 141) 75%,
+  rgb(235, 235, 141) 80%,
+  white 80%,
+  white 85%,
+  rgb(235, 235, 141) 85%,
+  rgb(235, 235, 141) 90%,
+  white 90%,
+  white 95%,
+  rgb(235, 235, 141) 95%
+);
+
     background-size: 200% 100%;
-    animation: barber-pole-animation 15s linear infinite;
+    animation: barber-pole-animation 12s linear infinite;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
