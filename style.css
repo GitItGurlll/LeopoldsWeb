@@ -14,7 +14,22 @@
 
 @font-face {
     font-family: 'Slippery';
-    src: url('Fonts/SlipperyTrial-Bold.otf') format('truetype');
+    src: url('Fonts/Rossanova-Bold.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Anko-Bold';
+    src: url('Fonts/Anko-BoldItalic.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Magnivera';
+    src: url('Fonts/Magnivera-Regular.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Ageo';
+    src: url('Fonts/Ageo-Bold.ttf') format('truetype');
 }
 
 body {
@@ -25,10 +40,6 @@ body {
 
 img {
     width: 100%;
-}
-
-#butterPecan {
-    margin-left: 5.5vw;
 }
 
 .header {
@@ -79,7 +90,7 @@ img {
 }
 
 button {
-    font-family: 'Arcuta';
+    font-family: 'Ageo';
     font-weight: 400;
     font-size: 22px;
     padding: 4px;
@@ -89,7 +100,6 @@ button {
     background-color: #9D000D;
     color: white;
     border: none;
-    font-family: 'Roboto Slab';
     font-weight: 100;
 }
 
@@ -184,6 +194,7 @@ button {
 }
 
 .about {
+    min-height: 250px;
     height: auto;
     font-family: 'Droid';
     background-color: white;
@@ -193,6 +204,10 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.about h1 {
+    font-family: 'Anko-Bold';
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -227,7 +242,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .sliderWrapper h1 {
     font-size: 13vw;
-    margin-bottom: 10px;
+    margin: 15px 0 10px 0;
     color: black;
 }
 
@@ -238,12 +253,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .item img {
+    width: 97%;
     border-radius: 15px;
 }
 
+.item > button {
+    width: 95%;
+}
+
 .item h2 {
+    min-width: 340px;
     font-size: 35px;
-    margin-top: 5px;
+    margin: 7px 0 15px 0;
 }
 
 
@@ -309,7 +330,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #email {
-    line-height: 2.5em;
+    line-height: 3em;
     margin-bottom: 5px;
     border-radius: 8px;
     border-color: black;
@@ -351,7 +372,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .girlScouts strong {
     font-family: 'Arcuata';
-    margin: 8px 15px 0 15px;
+    margin: 8px 15px 15px 15px;
     font-size: 18px;
 }
 
@@ -368,6 +389,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .socials h1 {
     margin-bottom: 15px;
+    font-family: 'Anko-Bold';
 }
 
 #social-wrapper {
@@ -377,7 +399,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #social-wrapper img {
-    width: 35px;
+    max-width: 45px;
 }
 
 .awards {
@@ -409,6 +431,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .wrapper h1 {
+    font-size: 9vmin;
     color: #9D000D;
 }
 
@@ -423,6 +446,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 50%;
     transform: translate(-50%, 50%);
     width: 50vw;
+    font-size: 26px;
 }
 
 #image-track {
@@ -448,7 +472,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 401px) {
 
 .slider {
-    left: 2.3%;
+    left: 2.55%;
 }
 
 .wrapper {
