@@ -115,7 +115,7 @@ button {
 }
 
 .barber-pole #order {
-    background: linear-gradient(45deg, white 10%, black 10%, black 20%, white 20%, white 30%, black 30%, black 40%, white 40%, white 50%, black 50%, black 60%, white 60%, white 70%, black 70%, black 80%, white 80%, white 90%, black 90%);
+    background: linear-gradient(45deg, #b8ac8c 10%, #b8ac8c  10%, #b8ac8c  20%, white 20%, white 30%, #b8ac8c  30%, #b8ac8c  40%, white 40%, white 50%, #b8ac8c  50%, #b8ac8c  60%, white 60%, white 70%, #b8ac8c  70%, #b8ac8c  80%, white 80%, white 90%, #b8ac8c  90%);
     background-size: 200% 100%;
     animation: barber-pole-animation 15s linear infinite;
     -webkit-background-clip: text;
