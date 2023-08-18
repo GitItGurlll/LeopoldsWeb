@@ -18,8 +18,13 @@
 }
 
 @font-face {
+    font-family: 'Anko-Bold-Italic';
+    src: url('Fonts/Anko-Bold-Italic.otf') format('truetype');
+}
+
+@font-face {
     font-family: 'Anko-Bold';
-    src: url('Fonts/Anko-BoldItalic.otf') format('truetype');
+    src: url('Fonts/Anko-Bold.otf') format('truetype');
 }
 
 @font-face {
@@ -207,7 +212,7 @@ button {
 }
 
 .about h1 {
-    font-family: 'Anko-Bold';
+    font-family: 'Anko-Bold-Italic';
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -323,6 +328,10 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 15px;
 }
 
+.signUp h1, .girlScouts h1 {
+    font-family: 'Anko-Bold';
+}
+
 #emailSubmit {
     display: flex;
     flex-direction: column;
@@ -389,7 +398,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .socials h1 {
     margin-bottom: 15px;
-    font-family: 'Anko-Bold';
+    font-family: 'Anko-Bold-Italic';
 }
 
 #social-wrapper {
@@ -446,7 +455,8 @@ h1, h2, h3, h4, h5, h6 {
     left: 50%;
     transform: translate(-50%, 50%);
     width: 50vw;
-    font-size: 26px;
+    font-size: 22px;
+    font-family: 'Ageo';
 }
 
 #image-track {
@@ -454,7 +464,7 @@ h1, h2, h3, h4, h5, h6 {
   gap: 4vmin;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 30%;
   transform: translate(0%, -50%); 
   user-select: none; /* -- Prevent image highlighting -- */
 }
