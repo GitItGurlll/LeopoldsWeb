@@ -4,7 +4,9 @@ const items = document.querySelectorAll('.item');
 const rowGap = (window.innerWidth / 2); // Adjust this value based on your desired row gap
 
 let currentIndex = 0;
+let index = 0;
 let touchStartX = 0;
+let touchStartY = 0;
 
 // Calculate the total width of all items, including the row gap
 const totalItemsWidth = Array.from(items).reduce((total, item) => {
@@ -16,11 +18,14 @@ const totalItemsWidth = Array.from(items).reduce((total, item) => {
 // Set the width of the slider container to accommodate all items
 sliderContainer.style.width = `${totalItemsWidth}px`;
 
-function slideTo(index) {
-  const itemStyle = getComputedStyle(items[index]);
-  const itemMarginLeft = parseFloat(itemStyle.marginLeft);
-  const itemMarginRight = parseFloat(itemStyle.marginLeft);
+
+
+function slideTo(index, swipe) {
   let translation;
+if (currentIndex == 2 && swipe != true) {
+    console.log(currentIndex + index);
+    index = 0;
+}
 
   if (index < 0 || index >= items.length) {
     return;
@@ -29,17 +34,18 @@ function slideTo(index) {
   translation = index * (items[0].offsetWidth + rowGap);
   sliderContainer.style.transform = `translateX(-${translation}px)`;
   currentIndex = index;
+  return;
 }
 
-function slideNext() {
-  slideTo(currentIndex + 1);
+function slideNext(swipe) {
+  slideTo(currentIndex + 1, swipe);
 }
 
-function slidePrev() {
-  slideTo(currentIndex - 1);
+function slidePrev(swipe) {
+  slideTo(currentIndex - 1, swipe);
 }
 
-setInterval(slideNext, 4500); // Automatically slide every 4.5 seconds
+setInterval(slideNext, 8500); // Automatically slide every 4.5 seconds
 
 slider.addEventListener('touchstart', handleTouchStart);
 slider.addEventListener('touchmove', handleTouchMove);
@@ -50,15 +56,15 @@ function handleTouchStart(event) {
 }
 
 function handleTouchMove(event) {
-  event.preventDefault(); // Prevent default scrolling behavior
-
-  const touchX = event.touches[0].clientX;
-  const touchDiff = touchX - touchStartX;
-
+    event.preventDefault(); // Prevent default scrolling behavior
+    const touchX = event.touches[0].clientX;
+    const touchDiff = touchX - touchStartX;
+  
+    console.log("hi")
   if (touchDiff > 50) {
-    slidePrev();
+    slidePrev(true);
   } else if (touchDiff < -50) {
-    slideNext();
+    slideNext(true);
   }
 }
 

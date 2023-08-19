@@ -176,7 +176,7 @@ button {
 
 .header button {
     background: none;
-    font-size: 28px;
+    font-size: 29px;
 }
 
 #oval {
@@ -215,7 +215,7 @@ button {
 
 .hours h2 {
     color: #9D000D;
-    font-size: 24px;
+    font-size: 26px;
     margin-bottom: 8px;
 }
 
@@ -226,16 +226,21 @@ button {
 
 .hours .other {
     margin-top: 10px;
+    font-weight: 100;
+}
+
+span {
+    font-weight: bold;
 }
 
 .hours h4 {
     margin: 4px;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 19px;
+    font-weight: 700;
 }
 
-.hours span {
-    font-size: 22px;
+.hours #main {
+    font-size: 23px;
 }
 
 .about {
@@ -249,6 +254,8 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .about h1, .socials h1 {
@@ -287,9 +294,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sliderWrapper h1 {
-    font-size: 10vmin;
-    margin: 15px 0 10px 0;
-    color: black;
+    font-size: 11vmin;
+    margin: 15px 0 15px 0;
+    color: #9D000D;
 }
 
 .item {
@@ -309,7 +316,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .item h2 {
     min-width: 340px;
-    font-size: 35px;
+    font-size: 30px;
     margin: 7px 0 15px 0;
 }
 
@@ -318,14 +325,15 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     padding-top: 10px;
     margin: 0;
+    font-size: 40px;
 }
 
 .about p {
-    text-align: center;
     margin: 0 15px 0 15px;
     padding-bottom: 10px;
     font-size: 19px;
     font-weight: bold;
+    margin-left: 15px;
 }
 
 .about button {
@@ -362,12 +370,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .signUp {
-    margin-top: -5px;
     border: 1px;
     border-style: solid;
     border-color: #bfb398;
     background-color: white;
     padding-bottom: 15px;
+}
+
+.signUp h1 {
+    margin: 15px 10px 17px 10px;
 }
 
 .signUp h1, .girlScouts h1 {
@@ -377,10 +388,12 @@ h1, h2, h3, h4, h5, h6 {
 #emailSubmit {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin: 0 10px 0 10px;
 }
 
 #email {
+    width: 95%;
     line-height: 3em;
     margin-bottom: 5px;
     border-radius: 8px;
@@ -389,18 +402,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #submit {
+    margin-top: 4px;
+    width: fit-content;
     font-family: 'Roboto Slab';
     color: white;
     border-style: none;
     background-color: #9D000D;
-    padding-bottom: 5px;
-    padding-top: 5px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
     font-size: 22px;
     font-weight: bold;
     border-radius: 6px;
 }
 
 .girlScouts {
+    margin-top: -4px;
     border: 1px;
     border-style: solid;
     border-color: #bfb398;
@@ -418,6 +436,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .girlScouts h1 {
+    margin: 20px 10px 15px 10px;
     color: #9D000D;
 }
 
@@ -439,6 +458,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .socials h1 {
+    font-size: 36px;
     margin-bottom: 15px;
 }
 
@@ -481,9 +501,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .wrapper h1 {
+    margin-top: 17px;
     font-size: 9vmin;
     color: #9D000D;
 }
+
+::placeholder {
+    /* Add your desired styles here */
+    font-size: 1.5em;
+    margin-left: 5px;
+    font-style: italic;
+  }
 
 .imageContainer {
     position: relative;
