@@ -71,8 +71,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header button {
+    padding: 0;
     background: none;
-    font-size: 29px;
+    font-size: 29.5px;
 }
 
 #oval {
@@ -115,7 +116,7 @@ button {
     width: 100%;
     padding: 0;
     display: flex;
-    gap: 1vw;
+    gap: 5vw;
     justify-content: center;
     background: linear-gradient(#AC0836, #8C062C);
     border: 1px solid #E28C4A;
@@ -231,16 +232,17 @@ button {
 }
 
 .about p {
+    line-height: 1.25;
     font-family: 'Piazzolla';
     margin: 0 15px;
     padding-bottom: 10px;
-    font-size: 19px;
+    font-size: 20px;
     font-weight: 600;
     margin-left: 15px;
 }
 
 .about button {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 /* Hours */
@@ -249,8 +251,8 @@ button {
     text-align: center;
     background-color: #ffecb6;
     border: 2px solid #9D000D;
-    border-left-color: #bfb398;
-    border-right-color: #bfb398;
+    border-left: 1px solid #bfb398;
+    border-right: 1px solid #bfb398;
     font-size: 16px;
     font-weight: lighter;
     padding-bottom: 5px;
@@ -322,6 +324,7 @@ span {
     flex: 0 0 300px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .item img {
@@ -330,12 +333,13 @@ span {
 }
 
 .item > button {
-    width: 95%;
+    width: 92%;
+    margin-right: 10px;
 }
 
 .item h2 {
     min-width: 340px;
-    font-size: 30px;
+    font-size: 29px;
     margin: 7px 0 15px;
 }
 
@@ -378,7 +382,8 @@ span {
 ::placeholder {
     font-size: 1.5em;
     margin-left: 5px;
-    font-style: italic;
+    font-family: 'Ageo';
+    font-style: bold;
 }
 
 #emailSubmit {
@@ -473,7 +478,8 @@ span {
 }
 
 .awards img {
-    width: 75px;
+    max-width: 23%;
+    height: auto;
 }
 
 #tripadvisor {
@@ -499,13 +505,6 @@ span {
     color: #9D000D;
 }
 
-/* Placeholder */
-::placeholder {
-    font-size: 1.5em;
-    margin-left: 5px;
-    font-style: italic;
-}
-
 /* Image Container */
 .imageContainer {
     position: relative;
@@ -526,7 +525,7 @@ span {
     display: flex;
     gap: 4vmin;
     position: absolute;
-    top: 50%;
+    top: 51%;
     left: 30%;
     transform: translate(0%, -50%);
     user-select: none;
