@@ -368,6 +368,7 @@ span {
     align-items: center;
     text-align: center;
     background-color: white;
+    border: 1px solid #bfb398;
 }
 
 .catering h1 {
