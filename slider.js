@@ -7,6 +7,7 @@ let currentIndex = 0;
 let index = 0;
 let touchStartX = 0;
 let touchStartY = 0;
+let timer = 0;
 
 // Calculate the total width of all items, including the row gap
 const totalItemsWidth = Array.from(items).reduce((total, item) => {
@@ -49,25 +50,28 @@ setInterval(slideNext, 8500); // Automatically slide every 4.5 seconds
 
 slider.addEventListener('touchstart', handleTouchStart);
 slider.addEventListener('touchmove', handleTouchMove);
-slider.addEventListener('touchend', handleTouchEnd);
+
+let canSlide = true;
 
 function handleTouchStart(event) {
-  touchStartX = event.touches[0].clientX;
+    touchStartX = event.touches[0].clientX;
+    canSlide = true;
 }
 
 function handleTouchMove(event) {
-    event.preventDefault(); // Prevent default scrolling behavior
+    event.preventDefault();
+
+    if (!canSlide) return;
+
     const touchX = event.touches[0].clientX;
     const touchDiff = touchX - touchStartX;
-  
-    console.log("hi")
-  if (touchDiff > 50) {
-    slidePrev(true);
-  } else if (touchDiff < -50) {
-    slideNext(true);
-  }
-}
 
-function handleTouchEnd() {
-  touchStartX = 0;
+    if (touchDiff > 50) {
+        slidePrev(true);
+        canSlide = false;
+    }
+    else if (touchDiff < -50) {
+        slideNext(true);
+        canSlide = false;
+    }
 }
