@@ -237,10 +237,10 @@ button {
 .about h1 {
     color: #fff;
   text-shadow:
-    1px 1px 0 #000,
-    -1px 1px 0 #000,
-    -1px -1px 0 #000,
-    1px -1px 0 #000;
+    1px 1px 0 #bfb398,
+    -1px 1px 0 #bfb398,
+    -1px -1px 0 #bfb398,
+    1px -1px 0 #bfb398;
     border-radius: 10px;
     text-align: center;
     padding-top: 10px;
@@ -253,7 +253,11 @@ button {
 }
 
 .about p {
-    background: rgba(255, 255, 255, 0.089);
+    text-shadow:
+    1px 1px 0 rgba(255, 255, 255, 0.329),
+    -1px 1px 0 rgba(255, 255, 255, 0.329),
+    -1px -1px 0 rgba(255, 255, 255, 0.329),
+    1px -1px 0 rgba(255, 255, 255, 0.329);
     border-radius: 10px;
     color: black;
     line-height: 1.25;
@@ -414,7 +418,7 @@ span {
 }
 
 .shipping img {
-    filter: brightness(0.75);
+    filter: brightness(0.80);
 }
 
 .shippingText {
@@ -431,9 +435,8 @@ span {
 
 .shipping h1 {
     width: max-content;
-    font-size: 45px;
+    font-size: 9vmin;
     border-radius: 8px;
-    padding: 4px 8px;
     margin: 35px 0 15px 0;
 }
 
@@ -514,9 +517,10 @@ span {
 /* Socials */
 .socials {
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
-    background-color: #ffecb6;
+    background-color: white;
     padding-bottom: 20px;
     border: 1px solid #bfb398;
     border-bottom-left-radius: 10px;
@@ -526,6 +530,9 @@ span {
 .socials h1 {
     font-size: 36px;
     margin-bottom: 15px;
+    color: #9D000D;
+    text-decoration: underline;
+    text-shadow: 2px 2px #ffecb6;
 }
 
 #social-wrapper {
