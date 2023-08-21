@@ -235,7 +235,12 @@ button {
 }
 
 .about h1 {
-    background-color: rgba(0, 0, 0, 0.027);
+    color: #fff;
+  text-shadow:
+    1px 1px 0 #000,
+    -1px 1px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000;
     border-radius: 10px;
     text-align: center;
     padding-top: 10px;
