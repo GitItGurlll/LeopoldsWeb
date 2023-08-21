@@ -59,7 +59,6 @@ function handleTouchStart(event) {
 }
 
 function handleTouchMove(event) {
-    event.preventDefault();
 
     if (!canSlide) return;
 
