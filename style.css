@@ -53,6 +53,18 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
+button, .header a {
+    font-family: 'Ageo';
+    font-weight: 400;
+    font-size: 22px;
+    padding: 4px 8px;
+    border-radius: 8px;
+    background-color: #9D000D;
+    color: white;
+    border: none;
+    text-decoration: none;
+}
+
 /* Header */
 .header {
     border-radius: 10px 10px 0 0;
@@ -70,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 2;
 }
 
-.header button {
+.header button, .header a {
     padding: 0;
     background: none;
     font-size: 29.5px;
@@ -97,19 +109,9 @@ h1, h2, h3, h4, h5, h6 {
     top: -164px;
 }
 
-button {
-    font-family: 'Ageo';
-    font-weight: 400;
-    font-size: 22px;
-    padding: 4px 8px;
-    border-radius: 8px;
-    background-color: #9D000D;
-    color: white;
-    border: none;
-}
-
 /* Navbar */
 .navbar {
+    position: relative;
     margin: 0 10px;
     width: 100%;
     padding: 0;
@@ -435,7 +437,7 @@ span {
 
 .shipping h1 {
     width: max-content;
-    font-size: 9vmin;
+    font-size: 8.8vmin;
     border-radius: 8px;
     margin: 35px 0 15px 0;
 }

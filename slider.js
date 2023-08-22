@@ -19,8 +19,6 @@ const totalItemsWidth = Array.from(items).reduce((total, item) => {
 // Set the width of the slider container to accommodate all items
 sliderContainer.style.width = `${totalItemsWidth}px`;
 
-
-
 function slideTo(index, swipe) {
   let translation;
 if (currentIndex == 2 && swipe != true) {
