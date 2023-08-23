@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home | Leopolds Ice Cream</title>
     <link rel="stylesheet" href="style.css">
     <script src="track.js" defer></script>
     <script src="slider.js" defer></script>
+    <link rel="icon" href="Images/Favicon.png" type="image/png">
 </head>
 <body>
     <div class="header">
@@ -15,13 +16,25 @@
             <div id="oval"></div>
             <img class="logo" src="Images/Leopolds-Logo.png">
         </div>
-        <ul class="navbar">
-            <button class="button">Menu</button>
-            <button class="button" id="expandBtn">Explore</button>
-            <div class="barber-pole button">
-                <button id="order">Order</button>
+        <div class="navbar">
+            <div class="start">
+                <button class="button">Menu</button>
+                <button class="button" id="expandBtn">Explore</button>
+                <div class="barber-pole">
+                    <button class="button" id="order">Order</button>
+                </div>
             </div>
-        </ul>
+            <div id="subContainer" class="hidden">
+                <ul>
+                  <li style="padding-top: 0;">Our Founder</li>
+                  <li>Blog</li>
+                  <li>Shop</li>
+                  <li>Locations</li>
+                  <li>Ice Cream Socials</li>
+                  <li>About</li>
+                </ul>
+              </div>
+        </div>
     </div>
     <div class="hours">
         <h2>Hours of Deliciousness</h2>

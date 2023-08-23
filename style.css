@@ -84,8 +84,55 @@ button, .header a {
 
 .header button, .header a {
     padding: 0;
+    margin: 10px 0 10px 0;
     background: none;
     font-size: 29.5px;
+}
+
+.button {
+    transition: opacity 0.3s ease-in-out, transform 0.4s ease-in-out;
+    opacity: 1;
+    position: relative;
+}
+
+.button.hide {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+#subContainer {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .65s ease-in-out;
+}
+
+#subContainer li {
+    list-style: none;
+    margin: 0p 15px 8px 15px;
+    padding-top: 5px;
+    font-size: 27px;
+    font-family: 'Arcuata';
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    transform: translate3d(30%, -5px, 0);
+    transition: transform .35s ease-in-out, opacity .35s ease-in-out;
+    opacity: 0;
+    position: relative;
+}
+
+#subContainer.show {
+    max-height: 254px; 
+}
+
+#subContainer.show li {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+}
+
+#subContainer ul {
+    margin: 10px 0 10px 0;
+    padding: 0;
 }
 
 #oval {
@@ -115,22 +162,24 @@ button, .header a {
     margin: 0 10px;
     width: 100%;
     padding: 0;
-    display: flex;
-    gap: 5vw;
-    justify-content: center;
     background: linear-gradient(#AC0836, #8C062C);
     border: 1px solid #E28C4A;
     border-left: none;
     border-right: none;
     outline: 1px solid #BC3B30;
-    height: 55px;
     align-items: center;
     margin-bottom: -135px;
     position: relative;
     bottom: 145px;
 }
 
-.navbar button:not(:last-child)::after {
+.start {
+    display: flex;
+    gap: 5vw;
+    justify-content: center;
+}
+
+.start button:not(:last-child)::after {
     content: "•";
     margin-left: 4vw;
     color: rgb(240, 157, 180);
@@ -138,9 +187,9 @@ button, .header a {
 
 /* Barber Pole */
 .barber-pole {
+    width: fit-content;
     position: relative;
     font-size: 2rem;
-    overflow: hidden;
 }
 
 .barber-pole #order {
@@ -189,7 +238,6 @@ button, .header a {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    margin: 0;
 }
 
 @keyframes barber-pole-animation {

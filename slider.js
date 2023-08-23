@@ -19,6 +19,25 @@ const totalItemsWidth = Array.from(items).reduce((total, item) => {
 // Set the width of the slider container to accommodate all items
 sliderContainer.style.width = `${totalItemsWidth}px`;
 
+document.getElementById("expandBtn").addEventListener("click", function() {
+  var buttons = Array.from(document.getElementsByClassName('button'));
+  buttons.forEach(button => {
+    button.classList.add("hide");
+    button.addEventListener('transitionend', function() {
+      this.style.display = "none";
+      document.getElementById("subContainer").style.minHeight = '55px';
+    }, {once: true});  // The `{once: true}` option automatically unbinds the listener after the event occurs
+  });
+
+  setTimeout(function() {
+    document.getElementById("subContainer").classList.add("show");
+    let listItems = document.querySelectorAll('#subContainer li');
+    listItems.forEach((item, index) => {
+      item.style.transitionDelay = `${index * 0.1}s`;
+    });
+  }, 250);  // The button translation duration
+});
+
 function slideTo(index, swipe) {
   let translation;
 if (currentIndex == 2 && swipe != true) {
