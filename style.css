@@ -168,7 +168,7 @@ button, .header a {
     -moz-border-radius: 100px / 50px;
     -webkit-border-radius: 100px / 50px;
     border-radius: 140px / 77px;
-    clip-path: content-box inset(0 28px 0 28px)
+    clip-path: inset(0 28px 0 28px);
 }
 
 .logo-wrapper {
