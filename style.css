@@ -5,36 +5,50 @@
 @font-face {
     font-family: 'Arcuata';
     src: url('Fonts/ArcuataTrial-Medium.otf') format('truetype');
+    font-display: swap;
+    font-style: normal;
 }
 
 @font-face {
     font-family: 'Droid';
     src: url('Fonts/Droid\ Sans\ Regular.ttf') format('truetype');
+    font-display: swap;
+    font-style: normal;
 }
 
 @font-face {
     font-family: 'Hornbill';
     src: url('Fonts/cooperm.ttf') format('truetype');
+    font-display: swap;
+    font-style: normal;
 }
 
 @font-face {
     font-family: 'Anko-Bold-Italic';
     src: url('Fonts/Anko-BoldItalic.otf') format('truetype');
+    font-display: swap;
+    font-style: normal;
 }
 
 @font-face {
     font-family: 'Anko-Bold';
     src: url('Fonts/Hornbill.ttf') format('truetype');
+    font-display: swap;
+    font-style: normal;
 }
 
 @font-face {
     font-family: 'Magnivera';
     src: url('Fonts/Magnivera-Regular.otf') format('truetype');
+    font-display: swap;
+    font-style: normal;
 }
 
 @font-face {
     font-family: 'Ageo';
     src: url('Fonts/Ageo-Bold.ttf') format('truetype');
+    font-display: swap;
+    font-style: normal;
 }
 
 /* General Styles */
