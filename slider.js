@@ -26,11 +26,12 @@ document.getElementById("expandBtn").addEventListener("click", function() {
     button.addEventListener('transitionend', function() {
       this.style.display = "none";
       document.getElementById("subContainer").style.minHeight = '55px';
-    }, {once: true});  // The `{once: true}` option automatically unbinds the listener after the event occurs
+    })
   });
 
   setTimeout(function() {
     document.getElementById("subContainer").classList.add("show");
+    document.getElementById("X").classList.add("show");
     let listItems = document.querySelectorAll('#subContainer li');
     listItems.forEach((item, index) => {
       item.style.transitionDelay = `${index * 0.1}s`;

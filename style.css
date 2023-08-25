@@ -86,11 +86,17 @@ button, .header a {
     padding: 0;
     margin: 10px 0 10px 0;
     background: none;
-    font-size: 29.5px;
+    font-size: 7.8vmin;
+}
+
+#X.show {
+    position: absolute;
+    right: 1.1rem;
+    z-index: 1;
 }
 
 .button {
-    transition: opacity 0.3s ease-in-out, transform 0.4s ease-in-out;
+    transition: opacity 0.25s ease-in-out, transform 0.4s ease-in-out;
     opacity: 1;
     position: relative;
 }
@@ -185,14 +191,7 @@ button, .header a {
     color: rgb(240, 157, 180);
 }
 
-/* Barber Pole */
-.barber-pole {
-    width: fit-content;
-    position: relative;
-    font-size: 2rem;
-}
-
-.barber-pole #order {
+#order {
     background: linear-gradient(
         45deg,
         rgb(235, 235, 141) 5%,
