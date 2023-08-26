@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
-button, .header a {
+.button, .header a {
     font-family: 'Ageo';
     font-weight: 400;
     font-size: 22px;
@@ -79,7 +79,7 @@ button, .header a {
     padding: 0;
     margin: 10px 0 10px 0;
     background: none;
-    font-size: 7.8vmin;
+    font-size: 7.9vmin;
 }
 
 #X.show {
@@ -402,14 +402,14 @@ span {
 }
 
 .item > button {
-    width: 92%;
+    min-width: 45%;
     margin-right: 10px;
 }
 
 .item h2 {
     min-width: 340px;
     font-size: 29px;
-    margin: 7px 0 15px;
+    margin: 10px 0 10px;
 }
 
 .catering {
@@ -515,7 +515,7 @@ span {
     border-style: solid;
 }
 
-#submit, .about button, .shipping button, .catering button {
+button, #submit {
     margin-top: 4px;
     width: fit-content;
     font-family: 'Roboto Slab';
@@ -526,6 +526,7 @@ span {
     font-weight: bold;
     border-radius: 6px;
     border: none;
+    text-decoration: none;
 }
 
 /* Girl Scouts */
