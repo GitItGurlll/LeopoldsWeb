@@ -46,8 +46,8 @@ function slidePrev(swipe) {
 
 setInterval(slideNext, 8500); // Automatically slide every 4.5 seconds
 
-slider.addEventListener('touchstart', handleTouchStart);
-slider.addEventListener('touchmove', handleTouchMove);
+slider.addEventListener('touchstart', handleTouchStart, {passive: true});
+slider.addEventListener('touchmove', handleTouchMove, {passive: true});
 
 let canSlide = true;
 
