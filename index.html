@@ -12,68 +12,68 @@
     <link rel="preload" as="image" href="Images/Leopolds-Logo.webp">
 </head>
 <body>
-    <div class="header">
-        <div class="logo-wrapper">
+    <header role="banner">
+        <div class="logo">
             <div id="oval"></div>
-            <img class="logo" src="Images/Leopolds-Logo.webp" width="264" height="148">
+            <img src="Images/Leopolds-Logo.webp" width="264" height="148">
         </div>
-        <nav>
-            <div class="start">
-                <button class="button">Menu</button>
-                <button class="button" id="expandBtn">Explore</button>
-                <button class="button">Ship</button>
+            <nav role="navigation">
+                <div class="initialNavigation">
+                    <button class="button">Menu</button>
+                    <button class="button" id="expandBtn">Explore</button>
+                    <button class="button">Ship</button>
+                </div>
+                <div id="hiddenNavigation" class="hidden">
+                    <button id="X">X</button>
+                    <ul>
+                        <li style="padding-top: 0;">Our Founder</li>
+                        <li>Blog</li>
+                        <li>Shop</li>
+                        <li>Locations</li>
+                        <li>Ice Cream Socials</li>
+                        <li>About</li>
+                    </ul>
+                </div>
+            </nav>
+    </header>
+    <main role="main">
+        <section class="hours">
+            <h2>Hours of Deliciousness</h2>
+            <h3 id="main"><span>Broughton:</span></h3>
+            <h4>Sunday - Thursday: 11AM - 10PM</h4>
+            <h4>Friday - Saturday: 11AM - 11PM</h4>
+            <h3 class="other">Airport Kiosk: <span>Daily 11AM - 7PM</span></h3>
+            <h3 class="other">Airport Shop: <span>Daily Noon - 8PM</span></h3>
+        </section>
+        <section class="whatsPopular">
+            <h1>What's Popular</h1>
+            <div class="sliderContainer">
+                <div class="slider">
+                    <div id="butterPecan" class="item">
+                        <div class="textWrapper">
+                            <img src="Images/Butter-Pecan-Mobile.webp" decoding="async" width="461" height="500">
+                            <h2>Butter Pecan</h2>
+                        </div>
+                        <button>Order</button>
+                    </div>
+                    <div class="item">
+                        <div class="textWrapper">
+                            <img id="mintChocolate" loading="lazy" decoding="async" src="Images/Mint-Chocolate-Chip-Mobile.webp" width="461" height="500">
+                            <h2>Mint Chocolate Chip</h2>
+                        </div>
+                        <button>Order</button>
+                    </div>
+                    <div class="item">
+                        <div class="textWrapper">
+                            <img id="peanutButter" loading="lazy" decoding="async" src="Images/Peanut-Butter-Chippy-Mobile.webp" width="461" height="500">
+                            <h2>Peanut Butter Chippy</h2>
+                        </div>
+                        <button>Order</button>
+                    </div>
+                </div>
             </div>
-            <div id="subContainer" class="hidden">
-                <button id="X">X</button>
-                <ul>
-                  <li style="padding-top: 0;">Our Founder</li>
-                  <li>Blog</li>
-                  <li>Shop</li>
-                  <li>Locations</li>
-                  <li>Ice Cream Socials</li>
-                  <li>About</li>
-                </ul>
-              </div>
-        </nav>
-    </div>
-    <div class="hours">
-        <h2>Hours of Deliciousness</h2>
-        <h3 id="main"><span>Broughton:</span></h3>
-        <h4>Sunday - Thursday: 11AM - 10PM</h4>
-        <h4>Friday - Saturday: 11AM - 11PM</h4>
-        <h3 class="other">Airport Kiosk: <span>Daily 11AM - 7PM</span></h3>
-        <h3 class="other">Airport Shop: <span>Daily Noon - 8PM</span></h3>
-    </div>
-    <div class="sliderWrapper">
-        <h1>What's Popular</h1>
-        <div class="sliderContainer">
-            <div class="slider">
-                <div id="butterPecan" class="item">
-                    <div class="textWrapper">
-                        <img src="Images/Butter-Pecan-Mobile.webp" decoding="async" width="461" height="500">
-                        <h2>Butter Pecan</h2>
-                    </div>
-                    <button>Order</button>
-                </div>
-                <div class="item">
-                    <div class="textWrapper">
-                        <img id="mintChocolate" loading="lazy" decoding="async" src="Images/Mint-Chocolate-Chip-Mobile.webp" width="461" height="500">
-                        <h2>Mint Chocolate Chip</h2>
-                    </div>
-                    <button>Order</button>
-                </div>
-                <div class="item">
-                    <div class="textWrapper">
-                        <img id="peanutButter" loading="lazy" decoding="async" src="Images/Peanut-Butter-Chippy-Mobile.webp" width="461" height="500">
-                        <h2>Peanut Butter Chippy</h2>
-                    </div>
-                    <button>Order</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="about-wrapper">
-        <div class="about">
+        </section>
+        <section class="about">
             <h1>About Us</h1>
             <p>
                 For over a century, we have been serving up 
@@ -86,105 +86,117 @@
                 Leopold's.
             </p>
             <button>Learn more</button>
+        </section>
+        <section class="famousRelations">
+            <h1>Famously Good!</h1>
+            <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+                <div class="imageContainer">
+                    <img class="image" loading="lazy" decoding="async" src="Images/Miley-Cyrus-Leopolds.webp" width="244" height="244" draggable="false" />
+                    <h2>Miley Cyrus</h2>
+                </div>
+                <div class="imageContainer">
+                    <img class="image" loading="lazy" decoding="async" src="Images/Tom-Cruise-Leopolds.webp" width="244" height="244" draggable="false" />
+                    <h2>Tom Cruise</h2>
+                </div>
+                <div class="imageContainer">
+                    <img class="image" loading="lazy" decoding="async" src="Images/William-Macy-Leopolds.webp" width="244" height="244" draggable="false" />
+                    <h2>William Macy</h2>
+                </div>
+                <div class="imageContainer">
+                    <img class="image" loading="lazy" decoding="async" src="Images/Paula-Deen-Leopolds.webp" width="244" height="244" draggable="false" />
+                    <h2>Paula Deen</h2>
+                </div>
+                <div class="imageContainer">
+                    <img class="image" loading="lazy" decoding="async" src="Images/Mini-Anden-Niki-Taylor-Leopolds.webp" width="244" height="244" draggable="false" />
+                    <h2 style="top:89%">Mini Anden & Niki Taylor</h2>
+                </div>
+                <div class="imageContainer">
+                    <img class="image" loading="lazy" decoding="async" src="Images/Alan-Rickman-Leopolds.webp" width="244" height="244" draggable="false" />
+                    <h2>Alan Rickman</h2>
+                </div>
+                <div class="imageContainer">
+                    <img class="image" loading="lazy" decoding="async" src="Images/Kimberly-Schlapman-Leopolds.webp" width="244" height="244" draggable="false" />
+                    <h2 style="min-width: 300px;">Kimberly Schlapman</h2>
+                </div>
+                <div class="imageContainer">
+                    <img class="image" loading="lazy" decoding="async" src="Images/Patti-LuPone-Leopolds.webp" width="244" height="244" draggable="false" />
+                    <h2>Patti LuPone</h2>
+                </div>
+                <div class="imageContainer">
+                    <img class="image" loading="lazy" decoding="async" src="Images/Philip-Hoffman-Leopolds.webp" width="244" height="244" draggable="false" />
+                    <h2>Philip Hoffman</h2>
+                </div>
+            </div>
+        </section>
+        <section class="catering">
+            <h1>Sprinkle some fun into your next event!</h1>
+            <div class="cartWrapper">
+                <img loading="lazy" decoding="async" src="Images/Cart.webp" width="600" height="594">
+                <strong>From corporate functions to birthday parties, we do it all. Want to make it more unique? Help us make a flavor just for you!</strong>
+                <button>Get Started</button>
+            </div>
+        </section>
+        <section class="shipping">
+            <img loading="lazy" decoding="async" src="Images/Shipping-Image.webp" width="748" height="477">
+            <div class="shippingText"> 
+                <h1>Shipping Nationwide</h1>  
+                <button>More Details</button>
+            </div>     
+        </section>
+        <section class="girlScouts">
+            <h1>Is Your Troop Visiting Savannah?</h1>
+            <img loading="lazy" decoding="async" src="Images/Girl-Scouts-Logo.png">
+            <strong>Help us give them a picnic to remember. Leopolds and the Girl Scouts - A true Savannah Tradition!</strong>
+        </section>
+        <form class="signUp" role="form">
+            <h1>Sign up for Updates & Special Offers</h1>
+            <div id="emailSubmit">
+                <input type="email" id="email" name="email" placeholder="Email address">
+                <input type="submit" id="submit" value="Submit">
+            </div>
+        </form>
+        <section class="socials">
+            <h1>Join our Family</h1>
+            <div id="social-wrapper">
+                <img loading="lazy" decoding="async" src="Images/Facebook-App.png">
+                <img loading="lazy" decoding="async" src="Images/Twitter-App.png">
+                <img loading="lazy" decoding="async" src="Images/Flickr-App.png">
+                <img loading="lazy" decoding="async" src="Images/Pinterest-App.png">
+                <img loading="lazy" decoding="async" src="Images/Instagram-App.png">
+            </div>
+        </section>
+    </main>
+    <footer role="contentinfo">
+        <div class="awards">
+            <img loading="lazy" decoding="async" src="Images/Bizzie-Award.png">
+            <img loading="lazy" decoding="async" src="Images/Pledge-Project.png" style="max-width: 19%;">
+            <img loading="lazy" decoding="async" id="tripadvisor" src="Images/Travelers-Choice.png">
         </div>
-    </div>
-    <div class="wrapper">
-        <h1>Famously Good!</h1>
-        <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+        <strong>© 2023 Leopold's Ice Cream. All Rights Reserved.</strong>
+    </footer>
+        <script src="track.js" defer></script>
+        <script src="slider.js" defer></script>
+        <script defer>
+            document.getElementById("expandBtn").addEventListener("click", function() {
+            var buttons = Array.from(document.getElementsByClassName('button'));
+            document.getElementById("hiddenNavigation").style.display = "inherit";
+            buttons.forEach(button => {
+                button.classList.add("hide");
+                button.addEventListener('transitionend', function() {
+                    this.style.display = "none";
+                    document.getElementById("hiddenNavigation").style.minHeight = '55px';
+                })
+            });
 
-            <div class="imageContainer">
-                <img class="image" loading="lazy" decoding="async" src="Images/Miley-Cyrus-Leopolds.webp" draggable="false" />
-                <h2>Miley Cyrus</h2>
-            </div>
-
-            <div class="imageContainer">
-                <img class="image" loading="lazy" decoding="async" src="Images/Tom-Cruise-Leopolds.webp" draggable="false" />
-                <h2>Tom Cruise</h2>
-            </div>
-
-            <div class="imageContainer">
-                <img class="image" loading="lazy" decoding="async" src="Images/William-Macy-Leopolds.webp" draggable="false" />
-                <h2>William Macy</h2>
-            </div>
-
-            <div class="imageContainer">
-                <img class="image" loading="lazy" decoding="async" src="Images/Paula-Deen-Leopolds.webp" draggable="false" />
-                <h2>Paula Deen</h2>
-            </div>
-
-            <div class="imageContainer">
-                <img class="image" loading="lazy" decoding="async" src="Images/Mini-Anden-Niki-Taylor-Leopolds.webp" draggable="false" />
-                <h2 style="top:89%">Mini Anden & Niki Taylor</h2>
-            </div>
-
-            <div class="imageContainer">
-                <img class="image" loading="lazy" decoding="async" src="Images/Alan-Rickman-Leopolds.webp" draggable="false" />
-                <h2>Alan Rickman</h2>
-            </div>
-
-            <div class="imageContainer">
-                <img class="image" loading="lazy" decoding="async" src="Images/Kimberly-Schlapman-Leopolds.webp" draggable="false" />
-                <h2 style="min-width: 300px;">Kimberly Schlapman</h2>
-            </div>
-
-            <div class="imageContainer">
-                <img class="image" loading="lazy" decoding="async" src="Images/Patti-LuPone-Leopolds.webp" draggable="false" />
-                <h2>Patti LuPone</h2>
-            </div>
-
-            <div class="imageContainer">
-                <img class="image" loading="lazy" decoding="async" src="Images/Philip-Hoffman-Leopolds.webp" draggable="false" />
-                <h2>Philip Hoffman</h2>
-            </div>
-            
-        </div>
-    </div>
-    <div class="catering">
-        <h1>Sprinkle some fun into your next event!</h1>
-        <div class="cartWrapper">
-            <img loading="lazy" decoding="async" src="Images/Cart.webp">
-            <strong>From corporate functions to birthday parties, we do it all. Want to make it more unique? Help us make a flavor just for you!</strong>
-            <button>Get Started</button>
-        </div>
-    </div>
-    <div class="shipping">
-        <img loading="lazy" decoding="async" src="Images/Shipping-Image.webp">
-         <div class="shippingText"> 
-            <h1>Shipping Nationwide</h1>  
-            <button>More Details</button>
-         </div>     
-    </div>
-    <div class="girlScouts">
-        <h1>Is Your Troop Visiting Savannah?</h1>
-        <img loading="lazy" decoding="async" src="Images/Girl-Scouts-Logo.png">
-        <strong>Help us give them  picnic to remember. Leopolds and the Girl Scouts - A true Savannah Tradition!</strong>
-    </div>
-    <div class="signUp">
-        <h1>Sign up for Updates & Special Offers</h1>
-        <div  id="emailSubmit">
-            <input type="email" id="email" name="email" placeholder="Email address">
-            <input type="submit" id="submit" value="Submit">
-        </div>
-    </div>
-    <div class="socials">
-        <h1>Join our Family</h1>
-        <div id="social-wrapper">
-            <img loading="lazy" decoding="async" src="Images/Facebook-App.png">
-            <img loading="lazy" decoding="async" src="Images/Twitter-App.png">
-            <img loading="lazy" decoding="async" src="Images/Flickr-App.png">
-            <img loading="lazy" decoding="async" src="Images/Pinterest-App.png">
-            <img loading="lazy" decoding="async" src="Images/Instagram-App.png">
-        </div>
-    </div>
-    <div class="awards">
-        <img loading="lazy" decoding="async" src="Images/Bizzie-Award.png">
-        <img loading="lazy" decoding="async" src="Images/Pledge-Project.png" style="max-width: 19%;">
-        <img loading="lazy" decoding="async" id="tripadvisor" src="Images/Travelers-Choice.png">
-    </div>
-    <div class="footer">
-        <h6>© 2023 Leopold's Ice Cream. All Rights Reserved.</h6>
-    </div>
-    <script src="track.js" defer></script>
-    <script src="slider.js" defer></script>
+            setTimeout(function() {
+                document.getElementById("hiddenNavigation").classList.add("show");
+                document.getElementById("X").classList.add("show");
+                let listItems = document.querySelectorAll('#hiddenNavigation li');
+                    listItems.forEach((item, index) => {
+                        item.style.transitionDelay = `${index * 0.1}s`;
+                    });
+                }, 210);
+            });
+        </script>
 </body>
 </html>
