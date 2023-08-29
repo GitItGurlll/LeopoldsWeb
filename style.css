@@ -52,9 +52,10 @@ h1, h2, h3, h4, h5, h6 {
 
 footer > strong {
     font-family: 'Cooper';
-    margin: 2em auto 2em 16%;
+    margin: 1rem auto;
     text-align: center;
     font-size: 12px;
+    display: inherit;
 }
 
 /* Header */
@@ -87,10 +88,19 @@ header button {
     font-size: 7.9vmin;
 }
 
-#X.show {
+#back {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    width: 42px;
+    filter: invert(100%);
+}
+
+#back.show {
     position: absolute;
-    right: 1.1rem;
+    left: 2%;
+    top: 2%;
     z-index: 1;
+    opacity: 1;
 }
 
 header .button {
@@ -110,7 +120,7 @@ header .button.hide {
     transition: max-height .65s ease-in-out;
 }
 
-#hiddenNavigation ul {
+#hiddenNavigation .navWrapper {
     margin: 10px 0 10px;
     padding: 0;
 }
@@ -137,6 +147,7 @@ header .button.hide {
 #hiddenNavigation.show button {
     transform: translate3d(0, 0, 0);
     opacity: 1;
+    transition: opacity 0.25s ease-in-out, transform 0.4s ease-in-out;
 }
 
 #oval {
@@ -161,7 +172,7 @@ header .button.hide {
 }
 
 /* Navbar */
-nav {
+[aria-label="Navigation Bar"] {
     position: relative;
     margin: 0 10px;
     width: 100%;
@@ -246,14 +257,14 @@ nav {
     }
 }
 
-/* About Section */
+/* About Leopolds Section */
 
-.about h1, .socials h1 {
+[aria-label="About Leopolds"] h1, [aria-label="Social Media"] h1 {
     font-family: 'Anko-Bold-Italic';
     font-weight: 300;
 }
 
-.about {
+[aria-label="About Leopolds"] {
     background: 
     /* top, transparent red, faked with gradient */ 
     linear-gradient(
@@ -277,7 +288,7 @@ nav {
     color: rgb(255, 255, 255);
 }
 
-.about h1 {
+[aria-label="About Leopolds"] h1 {
     color: #fff;
   text-shadow:
     1px 1px 0 #bfb398,
@@ -291,7 +302,7 @@ nav {
     font-size: 45px;
 }
 
-.about p {
+[aria-label="About Leopolds"] p {
     text-shadow:
     1px 1px 0 rgba(255, 255, 255, 0.329),
     -1px 1px 0 rgba(255, 255, 255, 0.329),
@@ -308,12 +319,11 @@ nav {
     margin-left: 15px;
 }
 
-.about button {
+[aria-label="About Leopolds"] button {
     margin-bottom: 12px;
 }
 
-/* Hours */
-.hours {
+[aria-label="Hours by Location"] {
     height: auto;
     text-align: center;
     background-color: #ffecb6;
@@ -329,29 +339,29 @@ span {
     font-weight: 601;
 }
 
-.hours h2 {
+[aria-label="Hours by Location"] h2 {
     color: #9D000D;
     font-size: 26px;
     margin-bottom: 8px;
 }
 
-.hours h3 {
+[aria-label="Hours by Location"] h3 {
     margin-top: 7px;
     margin-bottom: 8px    ;
 }
 
-.hours .other {
+[aria-label="Hours by Location"] .other {
     margin-top: 10px;
     font-weight: 100;
 }
 
-.hours h4 {
+[aria-label="Hours by Location"] h4 {
     margin: 4px;
     font-size: 19px;
     font-weight: 700;
 }
 
-.hours #main {
+[aria-label="Hours by Location"] #main {
     font-size: 23px;
 }
 
@@ -373,7 +383,7 @@ span {
     position: relative;
 }
 
-.whatsPopular {
+[aria-label="What's Popular"] {
     height: auto;
     width: 99.5%;
     overflow: hidden;
@@ -381,7 +391,7 @@ span {
     border: 1px solid #E28C4A;
 }
 
-.whatsPopular h1 {
+[aria-label="What's Popular"] h1 {
     font-size: 11vmin;
     margin: 15px 0;
     color: #9D000D;
@@ -411,7 +421,7 @@ span {
     margin: 10px 0 10px;
 }
 
-.catering {
+[aria-label="Catering Information"] {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -422,23 +432,23 @@ span {
     border: 1px solid #bfb398;
 }
 
-.catering h1 {
+[aria-label="Catering Information"] h1 {
     color: #9D000D;
     margin: 25px 10px 20px 10px;
 }
 
-.catering h1, .girlScouts h1 {
+[aria-label="Catering Information"] h1, [aria-label="Girl Scout Catering Information"] h1 {
     font-size: 7.5vmin;
 }
 
-.catering img {
+[aria-label="Catering Information"] img {
     width: 80%;
     border-radius: 15px;
     border: 5px solid #ffecb6;
     outline: 1px solid #b9af93;
 }
 
-.catering button {
+[aria-label="Catering Information"] button {
     margin-bottom: 15px;
 }
 
@@ -449,23 +459,22 @@ span {
     align-items: center;
 }
 
-.catering .cartWrapper > strong {
+[aria-label="Catering Information"] .cartWrapper > strong {
     font-size: 20px;
 }
 
-/* Shipping */
-.shipping {
+[aria-label="Shipping"] {
     display: inline-block;
     position: relative;
     border: 1px solid #bfb398;
     border-bottom-style: none;
 }
 
-.shipping img {
+[aria-label="Shipping"] img {
     filter: brightness(0.80);
 }
 
-.shippingText {
+[aria-label="Shipping"] .shippingTextWrapper {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -477,7 +486,7 @@ span {
     justify-content: center;
 }
 
-.shipping h1 {
+[aria-label="Shipping"] h1 {
     width: max-content;
     font-size: 8.8vmin;
     border-radius: 8px;
@@ -485,13 +494,13 @@ span {
 }
 
 /* Sign Up */
-.signUp {
+[aria-label="Sign up for Newsletter"] {
     border: 1px solid #bfb398;
     background-color: white;
     padding-bottom: 15px;
 }
 
-.signUp h1 {
+[aria-label="Sign up for Newsletter"] h1 {
     margin: 15px 10px;
 }
 
@@ -532,7 +541,7 @@ button, #submit {
 }
 
 /* Girl Scouts */
-.girlScouts {
+[aria-label="Girl Scout Catering Information"] {
     margin-top: -4px;
     border: 1px solid #bfb398;
     display: flex;
@@ -543,23 +552,22 @@ button, #submit {
     padding-bottom: 5px;
 }
 
-.girlScouts img {
+[aria-label="Girl Scout Catering Information"] img {
     width: 200px;
 }
 
-.girlScouts h1 {
+[aria-label="Girl Scout Catering Information"] h1 {
     margin: 20px 10px;
     color: #9D000D;
 }
 
-.girlScouts strong, .catering strong {
+[aria-label="Girl Scout Catering Information"] strong, [aria-label="Catering Information"] strong {
     font-family: 'Arcuata';
     margin: 8px 15px;
     font-size: 18px;
 }
 
-/* Socials */
-.socials {
+[aria-label="Social Media"] {
     display: flex;
     position: relative;
     flex-direction: column;
@@ -571,7 +579,7 @@ button, #submit {
     border-bottom-right-radius: 10px;
 }
 
-.socials h1 {
+[aria-label="Social Media"] h1 {
     font-size: 36px;
     margin-bottom: 15px;
     color: #9D000D;
@@ -607,7 +615,7 @@ button, #submit {
 }
 
 /* Wrapper */
-.famousRelations {
+[aria-label="Famous People at Leopolds"] {
     height: 106vmin;
     width: 99.5%;
     background: radial-gradient(rgb(230, 230, 180), rgb(235, 235, 141));
@@ -619,9 +627,9 @@ button, #submit {
     margin-bottom: -2vh;
 }
 
-.famousRelations h1 {
-    margin-top: 17px;
-    font-size: 9vmin;
+[aria-label="Famous People at Leopolds"] h1 {
+    margin: 17px;
+    font-size: 10vmin;
     color: #9D000D;
 }
 
