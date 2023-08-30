@@ -650,7 +650,7 @@ button, #submit {
 
 /* Wrapper */
 [aria-label="Famous People at Leopolds"] {
-    height: 106vmin;
+    height: 103vmin;
     width: 99.5%;
     background: radial-gradient(rgb(230, 230, 180), rgb(235, 235, 141));
     margin-bottom: -5px;
@@ -687,8 +687,8 @@ button, #submit {
     display: flex;
     gap: 4vmin;
     position: absolute;
-    top: 51%;
-    left: 30%;
+    top: 54%;
+    left: 10%;
     transform: translate(0%, -50%);
     user-select: none;
 }
