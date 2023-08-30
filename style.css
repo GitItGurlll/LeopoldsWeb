@@ -469,7 +469,7 @@ span {
     margin: 25px 10px 20px 10px;
 }
 
-[aria-label="Catering Information"] h2, [aria-label="Girl Scout Catering Information"] h2 {
+[aria-label="Catering Information"] h2, [aria-label="Girl Scout Catering Information"] h2, [aria-label="Sign up for Newsletter"] h2 {
     font-size: 7.5vmin;
 }
 
@@ -627,7 +627,8 @@ button, #submit {
 }
 
 #social-wrapper img {
-    max-width: 45px;
+    width: 45px;
+    border-radius: 10px;
 }
 
 /* Awards */
