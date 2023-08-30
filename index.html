@@ -18,7 +18,7 @@
             <img src="Images/Leopolds-Logo.webp" alt="Leopolds-Logo, oval shape. Curved stylized text: Leopolds, below is date of founding: 1919" width="264" height="148">
         </div>
             <section aria-label="Navigation Bar">
-                <nav class="initialNavigation">
+                <nav id="initialNavigation">
                     <button aria-description="Link to Ice Cream Menu" class="button">Menu</button>
                     <button aria-description="Opens hidden altnerate menu" class="button" id="expandBtn">Explore</button>
                     <button aria-description="Link to shipping options for merchandise and ice cream" class="button">Ship</button>
@@ -39,38 +39,43 @@
     </header>
     <main>
         <section aria-label="Hours by Location">
-            <h2>Hours of Deliciousness</h2>
-            <h3 id="main"><span>Broughton:</span></h3>
-            <h4>Sunday - Thursday: 11AM - 10PM</h4>
-            <h4>Friday - Saturday: 11AM - 11PM</h4>
-            <h3 class="other">Airport Kiosk: <span>Daily 11AM - 7PM</span></h3>
-            <h3 class="other">Airport Shop: <span>Daily Noon - 8PM</span></h3>
+            <h3>Hours of Deliciousness</h3>
+            <h4 id="main"><span>Broughton:</span></h4>
+            <h5>Sunday - Thursday: 11AM - 10PM</h5>
+            <h5>Friday - Saturday: 11AM - 11PM</h5>
+            <h4 class="other">Airport Kiosk: <span>Daily 11AM - 7PM</span></h4>
+            <h4 class="other">Airport Shop: <span>Daily Noon - 8PM</span></h4>
+        </section>
+        <section aria-label="Order Ahead">
+            <h2>Want to skip the line?</h2>
+            <h3>(Limited Menu Only)</h3>
+            <button>Order Ahead!</button>
         </section>
         <section aria-label="What's Popular">
-            <h1>What's Popular</h1>
+            <h2>What's Popular</h2>
             <div class="sliderContainer">
                 <div class="slider">
                     <div id="butterPecan" class="item">
                         <div class="textWrapper">
                             <img src="Images/Butter-Pecan-Mobile.webp" title="Butter Pecan Ice Cream"  alt="Photo of ice cream scooper with a scoop of Butter Pecan ice cream" 
                             decoding="async" width="461" height="500">
-                            <h2>Butter Pecan</h2>
+                            <h3>Butter Pecan</h3>
                         </div>
                         <button aria-description="Link to order page, opens in new window">Order</button>
                     </div>
                     <div class="item">
                         <div class="textWrapper">
                             <img id="mintChocolate" src="Images/Mint-Chocolate-Chip-Mobile.webp" title="Mint Chocolate Chip Ice Cream" alt="Photo of ice cream scooper with a scoop of Mint-Chocolate-Chip ice cream" 
-                            loading="lazy" decoding="async" width="461" height="500">
-                            <h2>Mint Chocolate Chip</h2>
+                            decoding="async" width="461" height="500">
+                            <h3>Mint Chocolate Chip</h3>
                         </div>
                         <button aria-description="Link to order page, opens in new window">Order</button>
                     </div>
                     <div class="item">
                         <div class="textWrapper">
                             <img id="peanutButter" src="Images/Peanut-Butter-Chippy-Mobile.webp" title="Peanut Butter Chippy Ice Cream" alt="Photo of ice cream scooper with a scoop of Peanut Butter Chippy ice cream" 
-                            loading="lazy" decoding="async" width="461" height="500">
-                            <h2>Peanut Butter Chippy</h2>
+                            decoding="async" width="461" height="500">
+                            <h3>Peanut Butter Chippy</h3>
                         </div>
                         <button aria-description="Link to order page, opens in new window">Order</button>
                     </div>
@@ -78,7 +83,7 @@
             </div>
         </section>
         <section aria-label="About Leopolds">
-            <h1>About Us</h1>
+            <h2>About Us</h2>
             <p>
                 For over a century, we have been serving up 
                 "Good Things to Eat, Good Things to Drink" in 
@@ -92,57 +97,57 @@
             <button aria-description="Link to about page with more information">Learn more</button>
         </section>
         <section aria-label="Famous People at Leopolds">
-            <h1>Famously Good!</h1>
+            <h2>Famously Good!</h2>
             <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
                 <div class="imageContainer">
                     <img class="image" src="Images/Miley-Cyrus-Leopolds.webp" title="Miley-Cyrus with Ice Cream" alt="Miley-Cyrus with Ice Cream in hand" 
                     loading="lazy" decoding="async"  width="244" height="244" draggable="false" />
-                    <h2>Miley Cyrus</h2>
+                    <h3>Miley Cyrus</h3>
                 </div>
                 <div class="imageContainer">
                     <img class="image" src="Images/Tom-Cruise-Leopolds.webp" title="Tom Cruise and Stratton"  alt="Tom Cruise and Stratton Leopold sharing ice cream" 
                     loading="lazy" decoding="async"  width="244" height="244" draggable="false" />
-                    <h2>Tom Cruise</h2>
+                    <h3>Tom Cruise</h3>
                 </div>
                 <div class="imageContainer">
                     <img class="image" src="Images/William-Macy-Leopolds.webp" title="William Macy and Stratton"  alt="William Macy and Stratton Leopold pictured in the shop" 
                     loading="lazy" decoding="async"  width="244" height="244" draggable="false" />
-                    <h2>William Macy</h2>
+                    <h3>William Macy</h3>
                 </div>
                 <div class="imageContainer">
                     <img class="image" src="Images/Paula-Deen-Leopolds.webp" title="Paula Deen and Stratton"  alt="Paula Deen and Stratton Leopold locked in a side embrace, looking into the camera with ice cream in frame" 
                     loading="lazy" decoding="async"  width="244" height="244" draggable="false" />
-                    <h2>Paula Deen</h2>
+                    <h3>Paula Deen</h3>
                 </div>
                 <div class="imageContainer">
                     <img class="image" src="Images/Mini-Anden-Niki-Taylor-Leopolds.webp" title="Mini Anden and Niki Taylor"  alt="Mini Anden and Niki Taylor pictured in front of the store window licking ice cream"
                     loading="lazy" decoding="async"  width="244" height="244" draggable="false" />
-                    <h2 style="top:89%">Mini Anden & Niki Taylor</h2>
+                    <h3 style="top:89%">Mini Anden & Niki Taylor</h3>
                 </div>
                 <div class="imageContainer">
                     <img class="image" src="Images/Alan-Rickman-Leopolds.webp" title="Alan Rickman in Leopolds"  alt="Alan Rickman pictured finishing ice cream in the shop"
                     loading="lazy" decoding="async"  width="244" height="244" draggable="false" />
-                    <h2>Alan Rickman</h2>
+                    <h3>Alan Rickman</h3>
                 </div>
                 <div class="imageContainer">
                     <img class="image" src="Images/Kimberly-Schlapman-Leopolds.webp" title="Kimberly Schlapman in Leopolds"  alt="Kimberly Schlapman and Stratton Leopold locked in a side embrace in the shop"
                     loading="lazy" decoding="async"  width="244" height="244" draggable="false" />
-                    <h2 style="min-width: 300px;">Kimberly Schlapman</h2>
+                    <h3 style="min-width: 300px;">Kimberly Schlapman</h3>
                 </div>
                 <div class="imageContainer">
                     <img class="image" src="Images/Patti-LuPone-Leopolds.webp" title="Patti Lupone outside Leopolds" alt="Patti LuPone and Stratton Leopold locked in a side embrace outside the shop"
                     loading="lazy" decoding="async"  width="244" height="244" draggable="false" />
-                    <h2>Patti LuPone</h2>
+                    <h3>Patti LuPone</h3>
                 </div>
                 <div class="imageContainer">
                     <img class="image" src="Images/Philip-Hoffman-Leopolds.webp" title="Phillip Hoffman" alt="Phillip Hoffman enjoying Leopolds Ice Cream"
                     loading="lazy" decoding="async"  width="244" height="244" draggable="false" />
-                    <h2>Philip Hoffman</h2>
+                    <h3>Philip Hoffman</h3>
                 </div>
             </div>
         </section>
         <section aria-label="Catering Information">
-            <h1>Sprinkle some fun into your next event!</h1>
+            <h2>Sprinkle some fun into your next event!</h2>
             <div class="cartWrapper">
                 <img src="Images/Cart.webp" title="Leopold's Catering Cart" alt="Friendly leopolds worker serving ice cream from catering cart"
                 loading="lazy" decoding="async"  width="600" height="594">
@@ -154,24 +159,24 @@
             <img src="Images/Shipping-Image.webp" title="Leopold's Shipping Van" alt="Leopolds shipping van pictured on a highway, smeared lights surround it."
             loading="lazy" decoding="async" width="748" height="477">
             <div class="shippingTextWrapper"> 
-                <h1>Shipping Nationwide</h1>  
+                <h2>Shipping Nationwide</h2>  
                 <button>More Details</button>
             </div>     
         </section>
         <section aria-label="Girl Scout Catering Information">
-            <h1>Is Your Troop Visiting Savannah?</h1>
+            <h2>Is Your Troop Visiting Savannah?</h2>
             <img loading="lazy" decoding="async" src="Images/Girl-Scouts-Logo.png">
             <strong>Help us give them a picnic to remember. Leopolds and the Girl Scouts - A true Savannah Tradition!</strong>
         </section>
         <form aria-label="Sign up for Newsletter">
-            <h1>Sign up for Updates & Special Offers</h1>
+            <h2>Sign up for Updates & Special Offers</h2>
             <div id="emailSubmit">
                 <input type="email" id="email" name="email" placeholder="Email address">
                 <input type="submit" id="submit" value="Submit">
             </div>
         </form>
         <section aria-label="Social Media">
-            <h1>Join our Family</h1>
+            <h2>Join our Family</h2>
             <div id="social-wrapper">
                 <img loading="lazy" decoding="async" src="Images/Facebook-App.png">
                 <img loading="lazy" decoding="async" src="Images/Twitter-App.png">
@@ -213,22 +218,24 @@
             });
 
             document.getElementById("back").addEventListener("click", function() {
-                console.log("oh");
                 document.getElementById("back").classList.remove("show");
+                document.getElementById("hiddenNavigation").style.minHeight = '0px';
                 document.getElementById("hiddenNavigation").classList.remove("show");
-                let listItems = document.querySelectorAll('.list-item');
+                let listItems = document.querySelectorAll('.navWrapper button');
                 let length = listItems.length;
-                document.getElementById("hiddenNavigation").style.minHeight = 'auto';
                 for (let index = length - 1; index >= 0; index--) {
                     let item = listItems[index];
-                    item.style.transitionDelay = `${(length - 1 - index) * 0.1}s`;
+                    item.style.transitionDelay = `${(length - 1 - index) * 0.08}s`;
+                    console.log(index);
                 }
-                let done = true;
-                
-                buttons.forEach(button => {
+
+                setTimeout(function() {
+                    document.getElementById("initialNavigation").style.minHeight = 'auto';
+                    buttons.forEach(button => {
+                    button.style.display = 'flex';
                     button.classList.remove("hide");
-                    button.style.display = "inherit";
-                })
+                    });
+                }, 250);
             });
         </script>
 </body>
