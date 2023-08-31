@@ -22,17 +22,17 @@ const handleOnMove = e => {
 
   track.animate(
     {
-      transform: `translate(${nextPercentageUnconstrained}%, -50%)`
+      transform: `translate(${nextPercentageUnconstrained}%, -50%)` 
     },
-    { duration: 1000, fill: "forwards" }
+    { duration: 1000, fill: "forwards", passive: true}
   );
 
   for (const image of track.getElementsByClassName("image")) {
     image.animate(
       {
-        objectPosition: `${100 + nextPercentageUnconstrained}% center`
+        objectPosition: { passive: true } `${100 + nextPercentageUnconstrained}% center` 
       },
-      { duration: 1000, fill: "forwards" }
+      { duration: 1000, fill: "forwards", passive: true }
     );
   }
 };
