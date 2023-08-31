@@ -38,6 +38,7 @@ body {
     background-color: #ece2d3;
     margin: 25px 5px 0 5px;
     box-sizing: border-box;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 img {
@@ -177,7 +178,7 @@ header .button.hide {
 #hiddenNavigation.show button {
     transform: translate3d(0, 0, 0);
     opacity: 1;
-    transition: opacity 0.25s ease-in-out, transform 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
 }
 
 #oval {
@@ -342,7 +343,7 @@ header .button.hide {
     font-family: 'Arcuata';
     margin: 0 15px;
     padding-bottom: 10px;
-    font-size: 21px;
+    font-size: 22px;
     font-weight: 600;
     margin-left: 15px;
 }
