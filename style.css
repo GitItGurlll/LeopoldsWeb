@@ -490,7 +490,7 @@ span {
 }
 
 [aria-label="Catering Information"] .cartWrapper > strong {
-    font-size: 20px;
+    font-size: 22px;
 }
 
 [aria-label="Shipping"] {
@@ -518,7 +518,7 @@ span {
 
 [aria-label="Shipping"] h2 {
     width: max-content;
-    font-size: 8.8vmin;
+    font-size: 8.5vmin;
     border-radius: 8px;
     margin: 35px 0 15px 0;
 }
