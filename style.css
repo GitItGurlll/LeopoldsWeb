@@ -608,10 +608,15 @@ button, #submit {
     color: #9D000D;
 }
 
-[aria-label="Girl Scout Catering Information"] strong, [aria-label="Catering Information"] strong {
+[aria-label="Girl Scout Catering Information"] strong {
     font-family: 'Arcuata';
-    margin: 8px 5px;
+    margin: 8px 15px;
     font-size: 18px;
+}
+
+[aria-label="Catering Information"] strong {
+    font-family: 'Arcuata';
+    margin: 8px 0px;
 }
 
 [aria-label="Social Media"] {
