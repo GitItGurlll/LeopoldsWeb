@@ -30,7 +30,7 @@ const handleOnMove = e => {
   for (const image of track.getElementsByClassName("image")) {
     image.animate(
       {
-        objectPosition: { passive: true } `${100 + nextPercentageUnconstrained}% center` 
+        objectPosition: `${100 + nextPercentageUnconstrained}% center` 
       },
       { duration: 1000, fill: "forwards", passive: true }
     );
