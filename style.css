@@ -584,7 +584,23 @@ button, #submit {
 }
 
 [aria-label="Girl Scout Catering Information"] img {
-    width: 200px;
+    width: 220px;
+    margin-bottom: 2rem;
+}
+
+.logoWrapper {
+    position: relative;
+}
+
+.logoWrapper > h4 {
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    font-size: 2.3rem;
+    transform: translate(-50%, -50%);
+    font-family: 'Ageo';
+    width: max-content;
+    margin: 0;
 }
 
 [aria-label="Girl Scout Catering Information"] h2 {
@@ -635,11 +651,13 @@ button, #submit {
     justify-content: center;
     margin-top: 25px;
     gap: 8vw;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .awards img {
-    max-width: 18%;
-    height: auto;
+    width: 110%;
 }
 
 #tripadvisor {
