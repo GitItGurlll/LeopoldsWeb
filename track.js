@@ -15,14 +15,15 @@ const handleOnMove = e => {
   const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX;
   const maxDelta = track.offsetWidth;
 
-  const percentage = (mouseDelta / maxDelta) * -100;
-  const nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage;
-
-  track.dataset.percentage = nextPercentageUnconstrained;
+  const percentage = (mouseDelta / maxDelta) * -100,
+        nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
+        nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
+  
+  track.dataset.percentage = nextPercentage;
 
   track.animate(
     {
-      transform: `translate(${nextPercentageUnconstrained}%, -50%)` 
+      transform: `translate(${nextPercentage}%, -50%)` 
     },
     { duration: 1000, fill: "forwards", passive: true}
   );
@@ -30,7 +31,7 @@ const handleOnMove = e => {
   for (const image of track.getElementsByClassName("image")) {
     image.animate(
       {
-        objectPosition: `${100 + nextPercentageUnconstrained}% center` 
+        objectPosition: `${100 + nextPercentage}% center` 
       },
       { duration: 1000, fill: "forwards", passive: true }
     );
