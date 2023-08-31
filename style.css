@@ -592,7 +592,7 @@ button, #submit {
     position: relative;
 }
 
-.logoWrapper > h4 {
+.logoWrapper > h3 {
     position: absolute;
     top: 93%;
     left: 50%;
