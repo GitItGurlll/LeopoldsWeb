@@ -657,7 +657,7 @@ button, #submit {
 }
 
 .awards img {
-    width: 110%;
+    max-width: 30%;
 }
 
 #tripadvisor {
