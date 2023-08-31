@@ -187,7 +187,7 @@ header .button.hide {
     position: relative;
     top: 135px;
     left: 9px;
-    width: 250px;
+    width: 260px;
     height: 140px;
     margin:10px 0 0 -10px;  
     background: white;
@@ -594,9 +594,9 @@ button, #submit {
 
 .logoWrapper > h3 {
     position: absolute;
-    top: 93%;
+    top: 92%;
     left: 50%;
-    font-size: 2.3rem;
+    font-size: 2rem;
     transform: translate(-50%, -50%);
     font-family: 'Ageo';
     width: max-content;
@@ -604,7 +604,7 @@ button, #submit {
 }
 
 [aria-label="Girl Scout Catering Information"] h2 {
-    margin: 20px 10px;
+    margin: 18px auto 12px auto;
     color: #9D000D;
 }
 
@@ -654,6 +654,7 @@ button, #submit {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    align-items: flex-start;
 }
 
 .awards img {
