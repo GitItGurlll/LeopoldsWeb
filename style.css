@@ -214,9 +214,9 @@ header .button.hide {
     border-right: none;
     outline: 1px solid #BC3B30;
     align-items: center;
-    margin-bottom: -135px;
+    margin-bottom: -133px;
     position: relative;
-    bottom: 145px;
+    bottom: 143px;
 }
 
 #initialNavigation {
