@@ -298,8 +298,8 @@ header .button.hide {
     background: 
     /* top, transparent red, faked with gradient */ 
     linear-gradient(
-      rgba(255, 255, 255, 0.40), 
-      rgba(255, 255, 255, 0.40)
+      rgba(255, 255, 255, 0.377), 
+      rgba(255, 255, 255, 0.377)
     ),
     /* bottom, image */
     url(Images/Leopolds-About.webp);
@@ -333,7 +333,9 @@ header .button.hide {
 }
 
 [aria-label="About Leopolds"] p {
-    -webkit-text-stroke: .5px rgba(255, 255, 255, 0.589);
+    text-shadow:
+    1px 1px 0 rgba(255, 255, 255, 0.26),
+    -1px 0px 0 rgba(255, 255, 255, 0.26);
     border-radius: 10px;
     color: black;
     line-height: 1.25;
