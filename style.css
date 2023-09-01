@@ -64,7 +64,7 @@ img {
     margin: 0;
 }
 
-[aria-label="Order Ahead"] > button {
+[aria-label="Order Ahead"] > a {
     margin: 15px;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
 }
@@ -82,7 +82,6 @@ footer > strong {
     display: inherit;
 }
 
-/* Header */
 header {
     border-radius: 10px 10px 0 0;
     background-color: white;
@@ -99,7 +98,7 @@ header img {
     z-index: 2;
 }
 
-header button {
+header a, header button {
     font-family: 'Ageo';
     font-weight: 400;
     border-radius: 8px;
@@ -111,6 +110,7 @@ header button {
     background: none;
     font-size: 7.9vmin;
     outline: none;
+    text-align: center;
 }
 
 #back {
@@ -156,7 +156,7 @@ header .button.hide {
     padding: 0;
 }
 
-#hiddenNavigation button {
+#hiddenNavigation a {
     display: list-item; 
     list-style: none;
     margin: 0px 0 5px 0;
@@ -175,7 +175,7 @@ header .button.hide {
     transition: max-height .65s ease-in-out; 
 }
 
-#hiddenNavigation.show button {
+#hiddenNavigation.show a {
     transform: translate3d(0, 0, 0);
     opacity: 1;
     transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
@@ -225,70 +225,11 @@ header .button.hide {
     justify-content: center;
 }
 
-#initialNavigation button:not(:last-child)::after {
+#initialNavigation .button:not(:last-child)::after {
     content: "•";
     margin-left: 4vw;
     color: rgb(240, 157, 180);
 }
-
-#order {
-    background: linear-gradient(
-        45deg,
-        rgb(235, 235, 141) 5%,
-        rgb(235, 235, 141) 10%,
-        white 10%,
-        white 15%,
-        rgb(235, 235, 141) 15%,
-        rgb(235, 235, 141) 20%,
-        white 20%,
-        white 25%,
-        rgb(235, 235, 141) 25%,
-        rgb(235, 235, 141) 30%,
-        white 30%,
-        white 35%,
-        rgb(235, 235, 141) 35%,
-        rgb(235, 235, 141) 40%,
-        white 40%,
-        white 45%,
-        rgb(235, 235, 141) 45%,
-        rgb(235, 235, 141) 50%,
-        white 50%,
-        white 55%,
-        rgb(235, 235, 141) 55%,
-        rgb(235, 235, 141) 60%,
-        white 60%,
-        white 65%,
-        rgb(235, 235, 141) 65%,
-        rgb(235, 235, 141) 70%,
-        white 70%,
-        white 75%,
-        rgb(235, 235, 141) 75%,
-        rgb(235, 235, 141) 80%,
-        white 80%,
-        white 85%,
-        rgb(235, 235, 141) 85%,
-        rgb(235, 235, 141) 90%,
-        white 90%,
-        white 95%,
-        rgb(235, 235, 141) 95%
-    );
-    background-size: 200% 100%;
-    animation: barber-pole-animation 12s linear infinite;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-}
-
-@keyframes barber-pole-animation {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: 500% 0;
-    }
-}
-
-/* About Leopolds Section */
 
 [aria-label="About Leopolds"] h2, [aria-label="Social Media"] h2 {
     font-family: 'Anko-Bold-Italic';
@@ -348,7 +289,7 @@ header .button.hide {
     margin-left: 15px;
 }
 
-[aria-label="About Leopolds"] button {
+[aria-label="About Leopolds"] a {
     margin-bottom: 12px;
 }
 
@@ -395,62 +336,6 @@ span {
     font-size: 23px;
 }
 
-/* Slider */
-.slider {
-    margin: auto;
-    display: flex;
-    width: fit-content;
-    overflow: hidden;
-    gap: 50vw;
-    position: relative;
-    left: 1%;
-}
-
-.sliderContainer {
-    display: flex;
-    transition: transform 0.3s ease;
-    padding-bottom: 3vh;
-    position: relative;
-}
-
-[aria-label="What's Popular"] {
-    height: auto;
-    width: 99.5%;
-    overflow: hidden;
-    background-color: white;
-    border: 1px solid #E28C4A;
-}
-
-[aria-label="What's Popular"] h2 {
-    font-size: 11vmin;
-    margin: 25px 0 15px 0;
-    color: #9D000D;
-}
-
-.item {
-    flex: 0 0 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.item img {
-    width: 97%;
-    border-radius: 15px;
-}
-
-.item > button {
-    min-width: 45%;
-    margin-right: 10px;
-    margin-bottom: 2px;
-}
-
-.item h3 {
-    min-width: 340px;
-    font-size: 29px;
-    margin: 10px 0 10px;
-}
-
 [aria-label="Catering Information"] {
     display: flex;
     flex-direction: column;
@@ -478,7 +363,7 @@ span {
     outline: 1px solid #b9af93;
 }
 
-[aria-label="Catering Information"] button {
+[aria-label="Catering Information"] a {
     margin-bottom: 15px;
 }
 
@@ -557,7 +442,7 @@ span {
     border-style: solid;
 }
 
-button, #submit {
+a, #submit {
     margin-top: 4px;
     width: fit-content;
     font-family: 'Hando Bold';
@@ -568,7 +453,7 @@ button, #submit {
     border-radius: 6px;
     border: none;
     text-decoration: none;
-    outline: 2px solid #53061c;
+    border: 2px solid #53061c;
 }
 
 /* Girl Scouts */
@@ -651,7 +536,6 @@ button, #submit {
     border-radius: 10px;
 }
 
-/* Awards */
 .awards {
     display: flex;
     justify-content: center;
@@ -671,7 +555,6 @@ button, #submit {
     border-radius: 10px;
 }
 
-/* Wrapper */
 [aria-label="Famous People at Leopolds"] {
     height: 103vmin;
     width: 99.5%;
@@ -722,17 +605,4 @@ button, #submit {
     height: 65vmin;
     object-fit: cover;
     object-position: 100% center;
-}
-
-/* Media Queries */
-@media (min-width: 385px) {
-    .slider {
-        left: 1.5%;
-    }
-}
-
-@media (min-width: 401px) {
-    .slider {
-        left: 2.55%;
-    }
 }

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Leopolds Ice Cream</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="Images/Favicon.png" type="image/png">
+    <link rel="icon" href="Images/Leopolds-Favicon.ico" type="image/png">
     <link rel="preload" href="Fonts/Ageo-Bold.woff2" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="Fonts/Cooper-Medium.woff2" as="font" type="font/ttf" crossorigin>
     <link rel="preload" as="image" href="Images/Leopolds-Logo.webp">
@@ -20,20 +20,20 @@
         </div>
             <section aria-label="Navigation Bar">
                 <nav id="initialNavigation">
-                    <button aria-description="Link to Ice Cream Menu" class="button">Menu</button>
+                    <a aria-description="Link to Ice Cream Menu" class="button">Menu</a>
                     <button aria-description="Opens hidden altnerate menu" class="button" id="expandBtn">Explore</button>
-                    <button aria-description="Link to shipping options for merchandise and ice cream" class="button">Ship</button>
+                    <a aria-description="Link to shipping options for merchandise and ice cream" class="button">Ship</a>
                 </nav>
                 <nav id="hiddenNavigation" class="hidden">
                     <img id="back" src="Images/Back-Arrow.svg" title="Back arrow"
                     loading="lazy" decoding="async">
                     <div class="navWrapper">
-                        <button aria-description="Links to description of Stratton Leopold, founder of Leopolds">Our Founder</button>
-                        <button aria-description="Link to Leopold's blog" >Blog</button>
-                        <button aria-description="Link to Merchandise shop" >Shop</button>
-                        <button aria-description="Link to Leopold's locations addresses">Locations</button>
-                        <button aria-description="Link to catering and events">Ice Cream Socials</button>
-                        <button aria-description="Link to about page">About</button>
+                        <a aria-description="Links to description of Stratton Leopold, founder of Leopolds">Our Founder</a>
+                        <a aria-description="Link to Leopold's blog" >Blog</a>
+                        <a aria-description="Link to Merchandise shop" >Shop</a>
+                        <a aria-description="Link to Leopold's locations addresses">Locations</a>
+                        <a aria-description="Link to catering and events">Ice Cream Socials</a>
+                        <a aria-description="Link to about page">About</a>
                     </div>
                 </nav>
             </section>
@@ -50,21 +50,19 @@
         <section aria-label="Order Ahead">
             <h2>Want to skip the line?</h2>
             <h3>(Limited Menu Only)</h3>
-            <button>Order Ahead!</button>
+            <a>Order Ahead!</a>
         </section>
         <section aria-label="About Leopolds">
             <h2>About Us</h2>
-            <p>
-                For over a century, we have been serving up 
+            <p>For over a century, we have been serving up 
                 "Good Things to Eat, Good Things to Drink" in 
                 beautiful, historic Savannah, Georgia. From our 
                 award-winning, homemade super-premium ice 
                 cream, unchanged since 1919, to our fresh 
                 squeezed fruit drinks, coffees and freshly baked 
                 treats, you're sure to find something memorable at 
-                Leopold's.
-            </p>
-            <button aria-description="Link to about page with more information">Learn more</button>
+                Leopold's.</p>
+            <a aria-description="Link to about page with more information">Learn more</a>
         </section>
         <section aria-label="Famous People at Leopolds">
             <h2>Famously Good!</h2>
@@ -122,7 +120,7 @@
                 <img src="Images/Cart.webp" title="Leopold's Catering Cart" alt="Friendly leopolds worker serving ice cream from catering cart"
                 loading="lazy" decoding="async"  width="600" height="594">
                 <strong>From corporate functions to birthday parties, we do it all. Want to make it more unique? Help us make a flavor just for you!</strong>
-                <button>Get Started</button>
+                <a>Get Started</a>
             </div>
         </section>
         <section aria-label="Shipping">
@@ -130,7 +128,7 @@
             loading="lazy" decoding="async" width="748" height="477">
             <div class="shippingTextWrapper"> 
                 <h2>Shipping Nationwide</h2>  
-                <button>More Details</button>
+                <a>More Details</a>
             </div>     
         </section>
         <section aria-label="Girl Scout Catering Information">
@@ -168,7 +166,7 @@
         <strong>© 2023 Leopold's Ice Cream. All Rights Reserved.</strong>
     </footer>
         <script src="track.js" defer></script>
-        <script defer>
+        <script>
             var buttons = Array.from(document.getElementsByClassName('button'));
             document.getElementById("expandBtn").addEventListener("click", function() {
                 buttons.forEach(button => {
@@ -182,7 +180,7 @@
                 setTimeout(function() {
                     document.getElementById("hiddenNavigation").classList.add("show");
                     document.getElementById("back").classList.add("show");
-                    let listItems = document.querySelectorAll('.navWrapper button');
+                    let listItems = document.querySelectorAll('.navWrapper a');
                     listItems.forEach((item, index) => {
                         item.style.transitionDelay = `${index * 0.1}s`;
                     });
@@ -193,7 +191,7 @@
                 document.getElementById("back").classList.remove("show");
                 document.getElementById("hiddenNavigation").style.minHeight = '0px';
                 document.getElementById("hiddenNavigation").classList.remove("show");
-                let listItems = document.querySelectorAll('.navWrapper button');
+                let listItems = document.querySelectorAll('.navWrapper a');
                 let length = listItems.length;
                 for (let index = length - 1; index >= 0; index--) {
                     let item = listItems[index];
