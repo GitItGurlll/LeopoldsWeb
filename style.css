@@ -339,7 +339,7 @@ header .button.hide {
     -1px 0px 0 rgba(255, 255, 255, 0.26);
     border-radius: 10px;
     color: black;
-    line-height: 1.25;
+    line-height: 1.15;
     font-family: 'Arcuata';
     margin: 0 15px;
     padding-bottom: 10px;
@@ -616,6 +616,7 @@ button, #submit {
 
 [aria-label="Catering Information"] strong {
     font-family: 'Arcuata';
+    line-height: 1.15;
     margin: 8px 0px;
 }
 
